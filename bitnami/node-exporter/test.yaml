@@ -19,9 +19,9 @@ spec:
         app: test-node-exporter
     spec:
       containers:
-      - image: bitnami/node-exporter
+      - name: node-exporter
+        image: bitnami/node-exporter
         securityContext:
          allowPrivilegeEscalation: false
          runAsNonRoot: true
-                    name: node-exporter
-
+                    
