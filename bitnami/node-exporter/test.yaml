@@ -19,6 +19,7 @@ spec:
     spec:
       containers:
       - image: bitnami/node-exporter
+              securityContext:
+        +            allowPrivilegeEscalation: false
         name: node-exporter
-        securityContext:
-        +            spec.{containers, initContainers}.securityContext.allowPrivilegeEscalation: false
+
