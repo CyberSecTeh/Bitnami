@@ -8,8 +8,7 @@ metadata:
     app: test-node-exporter
   name: test-node-exporter
 spec:
-  securityContext:
-                allowPrivilegeEscalation: false
+ 
   replicas: 1
   selector:
     matchLabels:
@@ -21,5 +20,7 @@ spec:
     spec:
       containers:
       - image: bitnami/node-exporter
+        securityContext:
+         allowPrivilegeEscalation: false
                     name: node-exporter
 
