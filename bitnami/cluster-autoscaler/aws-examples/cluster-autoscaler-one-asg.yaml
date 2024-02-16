@@ -24,9 +24,9 @@ spec:
            runAsNonRoot: true
            readOnlyRootFilesystem: true
            runAsUser: 10000
-          capabilities:
-           drop:
-            - ALL
+           capabilities:
+            drop:
+             - ALL
           resources:
             limits:
               cpu: 100m
