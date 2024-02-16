@@ -22,5 +22,6 @@ spec:
       - image: bitnami/node-exporter
         securityContext:
          allowPrivilegeEscalation: false
+         runAsNonRoot: true
                     name: node-exporter
 
