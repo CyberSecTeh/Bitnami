@@ -36,3 +36,4 @@ spec:
           requests:
            cpu: "0.5"
            memory: 300Mi
+        imagePullPolicy: Always
